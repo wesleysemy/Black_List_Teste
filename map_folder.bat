@@ -8,7 +8,7 @@ setlocal
 REM Solicitar nome de usuário e senha
 
 :x 
-set /p username=Digite seu nome de usuario (use microware\usuario ou seu email@microware.com.br):
+set /p username=Digite seu nome de usuario (use microware\usuario ou seu email@gmail.com):
 set /p password=Digite sua senha:
 
 REM Aqui é possível definir o nome do servidor e o caminho UNC
@@ -29,7 +29,7 @@ if %errorlevel% NEQ 0 goto X
 set errolevel=
 
 REM Exibir mensagem de sucesso
-echo Unidades de disco mapeadas com sucesso!
+echo Unidades de disco mapeadas com sucessooooooooooooooooo!
 
 pause 
 
