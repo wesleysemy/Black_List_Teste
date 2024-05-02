@@ -54,12 +54,10 @@ set errolevel=
 REM Exibir mensagem de sucesso
 echo Unidades de disco mapeadas com sucesso!
 
-pause 
-
 set username=
 set password=
   
-endlocal
+exit
 
 
 
