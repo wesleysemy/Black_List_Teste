@@ -1,5 +1,15 @@
 @echo off
+if /I "%1"=="desconecta" goto desconecta
+goto continua
+:desconecta
+net use p: /delete
+net use q: /delete
+net use t: /delete
+net use k: /delete
+net use g: /delete
+exit
 
+:continua
 echo "Estabelecendo conexao com Microware"
 timeout /t 5
 
@@ -8,7 +18,7 @@ setlocal
 REM Solicitar nome de usuário e senha
 
 :x 
-set /p username=Digite seu nome de usuario (use microware\usuario ou seu email@microware.com.br):
+set /p username=Digite seu nome de usuario (use microware\usuario ou seu email@microware.com.br)
 set /p password=Digite sua senha:
 
 REM Aqui é possível definir o nome do servidor e o caminho UNC
@@ -44,11 +54,12 @@ set errolevel=
 REM Exibir mensagem de sucesso
 echo Unidades de disco mapeadas com sucesso!
 
+pause 
+
 set username=
 set password=
- 
- 
-exit
+  
+endlocal
 
 
 
