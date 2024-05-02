@@ -7,7 +7,7 @@ net use q: /delete
 net use t: /delete
 net use k: /delete
 net use g: /delete
-exit
+end
 
 :continua
 echo "Estabelecendo conexao com Microware"
