@@ -7,7 +7,7 @@ net use q: /delete
 net use t: /delete
 net use k: /delete
 net use g: /delete
-end
+goto fim
 
 :continua
 echo "Estabelecendo conexao com Microware"
@@ -58,6 +58,8 @@ set username=
 set password=
   
 exit
+
+:fim
 
 
 
