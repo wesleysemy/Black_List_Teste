@@ -18,7 +18,7 @@ setlocal
 REM Solicitar nome de usuário e senha
 
 :x 
-set /p username=Digite seu nome de usuario (use microware\usuario ou seu email@microware.com.br)
+set /p username=Digite seu nome de usuario (use microware\usuario ou seu email@microware.com.br):
 set /p password=Digite sua senha:
 
 REM Aqui é possível definir o nome do servidor e o caminho UNC
